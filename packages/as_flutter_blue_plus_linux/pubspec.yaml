@@ -1,0 +1,22 @@
+name: as_flutter_blue_plus_linux
+version: 1.36.8-0
+homepage: https://github.com/alekseisubbotin/flutter_blue_plus
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+  flutter: '>=3.7.0'
+
+dependencies:
+  bluez: '>=0.7.8 <0.9.0'
+  flutter:
+    sdk: flutter
+  as_flutter_blue_plus_platform_interface: 1.36.8-0
+  rxdart: '>=0.27.0 <0.29.0'
+
+flutter:
+  plugin:
+    implements: as_flutter_blue_plus
+    platforms:
+      linux:
+        dartPluginClass: FlutterBluePlusLinux

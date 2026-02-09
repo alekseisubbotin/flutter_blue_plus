@@ -1,0 +1,31 @@
+name: as_flutter_blue_plus
+version: 1.36.8-0
+homepage: https://github.com/alekseisubbotin/flutter_blue_plus
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
+  flutter: '>=3.7.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  as_flutter_blue_plus_platform_interface: 1.36.8-0
+  as_flutter_blue_plus_android: 1.36.8-0
+  as_flutter_blue_plus_darwin: 1.36.8-0
+  as_flutter_blue_plus_linux: 1.36.8-0
+  as_flutter_blue_plus_web: 1.36.8-0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: as_flutter_blue_plus_android
+      ios:
+        default_package: as_flutter_blue_plus_darwin
+      linux:
+        default_package: as_flutter_blue_plus_linux
+      macos:
+        default_package: as_flutter_blue_plus_darwin
+      web:
+        default_package: as_flutter_blue_plus_web
